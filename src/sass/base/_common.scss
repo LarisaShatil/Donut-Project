@@ -1,0 +1,366 @@
+// html {
+//   box-sizing: border-box;
+// }
+// *,
+// *::after,
+// *::before {
+//   box-sizing: inherit;
+//   // outline: 1px solid red;
+// }
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// p {
+//   margin: 0;
+// }
+
+// img {
+//   display: block;
+//   width: 100%;
+//   height: auto;
+// }
+
+// address {
+//   font-style: normal;
+// }
+
+// .list {
+//   list-style: none;
+//   padding-left: 0;
+//   margin: 0;
+// }
+
+// .link {
+//   text-decoration: none;
+//   &:hover,
+//   &:focus {
+//     color: var(--accent-color);
+//   }
+// }
+
+// body {
+//   font-family: var(--main-font-family);
+//   font-size: var(--main-font-size);
+//   font-weight: var(--main-font-weight);
+//   line-height: var(--main-line-height);
+//   color: var(--main-text-color);
+//   overflow-x: hidden;
+
+//   // desktop
+//   @media screen and (min-width: 1280px) {
+//     background-color: #fffff9;
+//     animation-name: move-bg-desktop;
+//     animation-duration: 3s;
+//     animation-timing-function: ease-in-out;
+//     animation-delay: 250ms;
+//     animation-fill-mode: both;
+
+//     background-image: url(../images/header_hero/desktop_donuts.png),
+//       url(../images/header_hero/spoon.png), url(./../images/bg_top_desktop.png),
+//       url(./../images/flour_desktop.png), url(./../images/bg_bottom_desktop.png);
+//     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//       background-image: url(../images/header_hero/desktop_donuts@2x.png),
+//         url(../images/header_hero/spoon@2x.png), url(./../images/bg_top_desktop@2x.png),
+//         url(./../images/flour_desktop@2x.png), url(./../images/bg_bottom_desktop@2x.png);
+//     }
+//     background-repeat: no-repeat;
+//   }
+
+//   // tablet
+//   @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+//     animation-name: move-bg-tablet;
+//     animation-duration: 3s;
+//     animation-timing-function: ease-in-out;
+//     animation-delay: 250ms;
+//     animation-fill-mode: both;
+
+//     background-image: url(../images/header_hero/tablet_donut.png),
+//       url(./../images/bg_top_tablet.png), url(./../images/flour_tablet.png),
+//       url(./../images/bg_tablet_bottom.png);
+
+//     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//       background-image: url(../images/header_hero/tablet_donut@2x.png),
+//         url(./../images/bg_top_tablet@2x.png), url(./../images/flour_tablet@2x.png),
+//         url(./../images/bg_tablet_bottom@2x.png);
+//     }
+//     background-repeat: no-repeat;
+//   }
+
+//   // mobile
+//   @media screen and (max-width: 767.98px) {
+//     animation-name: move-bg-mobile;
+//     animation-duration: 3s;
+//     animation-timing-function: ease-in-out;
+//     animation-delay: 250ms;
+//     animation-fill-mode: both;
+
+//     background-image: url(./../images/header_hero/mobile_donut.png),
+//       url(./../images/bg_top_mobile.png), url(./../images/flour_mobile.png),
+//       url(./../images/bg_mobile_bottom.png);
+
+//     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//       background-image: url(./../images/header_hero/mobile_donut@2x.png),
+//         url(./../images/bg_top_mobile@2x.png), url(./../images/flour_mobile@2x.png),
+//         url(./../images/bg_mobile_bottom@2x.png);
+//     }
+//     background-repeat: no-repeat;
+//   }
+// }
+
+// @keyframes move-bg-desktop {
+//   0% {
+//     background-size: 720px, 1px, 100vw 1000px, 350px, 100% 1450px;
+//     background-position: top -2000px right -1500px, top 150px left -10000px, top -400px left 0,
+//       bottom 0 right 0, bottom;
+//   }
+
+//   100% {
+//     background-size: 720px, 100px, 100vw 1100px, 350px, 100% 1450px;
+//     background-position: top right, top 150px left 0, top, bottom 0 right 0, bottom;
+//   }
+// }
+
+// @keyframes move-bg-tablet {
+//   0% {
+//     background-size: 200px, 100vw 620px, 200px, 100% 1300px;
+//     background-position: top -1000px right 120%, top -200px left 0, bottom 0 right 0,
+//       bottom 60px left 0;
+//   }
+
+//   100% {
+//     background-size: 400px, 100vw 620px, 200px, 100% 1350px;
+//     background-position: top 0 right 40%, top, bottom 0 right 0, bottom 60px left 0;
+//   }
+// }
+
+// @keyframes move-bg-mobile {
+//   0% {
+//     background-size: 100px, 100vw 500px, 115px, 100% 1250px;
+//     background-position: top -100px left -100px, top -100px left 0, bottom 0 right 0,
+//       bottom 200px left;
+//   }
+
+//   100% {
+//     background-size: 35vw, 100vw 500px, 115px, 100% 1400px;
+//     background-position: top 0 left 0, top 0 left 0, bottom 0 right 0, bottom 200px left;
+//   }
+// }
+
+// .common-bg {
+//   margin: 0 auto;
+
+//   @media screen and (min-width: 1280px) {
+//     width: 1280px;
+//     background-image: url(./../images/confetti_desktop.png);
+
+//     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//       background-image: url(./../images/confetti_desktop@2x.png);
+//     }
+//     background-size: 500px;
+//     background-position: top 100px right 50px;
+//     background-repeat: no-repeat;
+//   }
+
+//   @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+//     max-width: 768px;
+//     background-image: url(./../images/confetti_tablet.png);
+
+//     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//       background-image: url(./../images/confetti_tablet@2x.png);
+//     }
+//     background-size: 200px;
+//     background-position: top 200px right 0;
+//     background-repeat: no-repeat;
+//   }
+// }
+
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  // outline: 1px solid red;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+body {
+  font-family: var(--main-font-family);
+  font-size: var(--main-font-size);
+  font-weight: var(--main-font-weight);
+  line-height: var(--main-line-height);
+  color: var(--main-text-color);
+  overflow-x: hidden;
+
+  // desktop
+  @media screen and (min-width: 1280px) {
+    background-color: #fffff9;
+    animation-name: move-bg-desktop;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 250ms;
+    animation-fill-mode: both;
+
+    background-image: url(../images/header_hero/desktop_donuts.png),
+      url(../images/header_hero/spoon.png), url(./../images/bg_top_desktop.png),
+      url(./../images/flour_desktop.png), url(./../images/bg_bottom_desktop.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/header_hero/desktop_donuts@2x.png),
+        url(../images/header_hero/spoon@2x.png), url(./../images/bg_top_desktop@2x.png),
+        url(./../images/flour_desktop@2x.png), url(./../images/bg_bottom_desktop@2x.png);
+    }
+    background-repeat: no-repeat;
+    background-size: 720px, 100px, 100vw 1100px, 350px, 100% 1450px;
+    background-position: top right, top 150px left 0, top, bottom 0 right 0, bottom;
+  }
+
+  // tablet
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    animation-name: move-bg-tablet;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 250ms;
+    animation-fill-mode: both;
+
+    background-image: url(../images/header_hero/tablet_donut.png),
+      url(./../images/bg_top_tablet.png), url(./../images/flour_tablet.png),
+      url(./../images/bg_tablet_bottom.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/header_hero/tablet_donut@2x.png),
+        url(./../images/bg_top_tablet@2x.png), url(./../images/flour_tablet@2x.png),
+        url(./../images/bg_tablet_bottom@2x.png);
+    }
+    background-repeat: no-repeat;
+    background-size: 400px, 100vw 620px, 200px, 100% 1350px;
+    background-position: top 0 right 40%, top, bottom 0 right 0, bottom 60px left 0;
+  }
+
+  // mobile
+  @media screen and (max-width: 767.98px) {
+    animation-name: move-bg-mobile;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 250ms;
+    animation-fill-mode: both;
+
+    background-image: url(./../images/header_hero/mobile_donut.png),
+      url(./../images/bg_top_mobile.png), url(./../images/flour_mobile.png),
+      url(./../images/bg_mobile_bottom.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(./../images/header_hero/mobile_donut@2x.png),
+        url(./../images/bg_top_mobile@2x.png), url(./../images/flour_mobile@2x.png),
+        url(./../images/bg_mobile_bottom@2x.png);
+    }
+    background-repeat: no-repeat;
+    background-size: 35vw, 100vw 500px, 115px, 100% 1400px;
+    background-position: top 0 left 0, top 0 left 0, bottom 0 right 0, bottom 200px left;
+  }
+}
+
+// @keyframes move-bg-desktop {
+//   0% {
+//     background-size: 720px, 1px, 100vw 1000px, 350px, 100% 1450px;
+//     background-position: top -2000px right -1500px, top 150px left -10000px, top -400px left 0,
+//       bottom 0 right 0, bottom;
+//   }
+
+//   100% {
+//     background-size: 720px, 100px, 100vw 1100px, 350px, 100% 1450px;
+//     background-position: top right, top 150px left 0, top, bottom 0 right 0, bottom;
+//   }
+// }
+
+// @keyframes move-bg-tablet {
+//   0% {
+//     background-size: 200px, 100vw 620px, 200px, 100% 1300px;
+//     background-position: top -1000px right 120%, top -200px left 0, bottom 0 right 0,
+//       bottom 60px left 0;
+//   }
+
+//   100% {
+//     background-size: 400px, 100vw 620px, 200px, 100% 1350px;
+//     background-position: top 0 right 40%, top, bottom 0 right 0, bottom 60px left 0;
+//   }
+// }
+
+// @keyframes move-bg-mobile {
+//   0% {
+//     background-size: 100px, 100vw 500px, 115px, 100% 1250px;
+//     background-position: top -100px left -100px, top -100px left 0, bottom 0 right 0,
+//       bottom 200px left;
+//   }
+
+//   100% {
+//     background-size: 35vw, 100vw 500px, 115px, 100% 1400px;
+//     background-position: top 0 left 0, top 0 left 0, bottom 0 right 0, bottom 200px left;
+//   }
+// }
+
+.common-bg {
+  margin: 0 auto;
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    background-image: url(./../images/confetti_desktop.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(./../images/confetti_desktop@2x.png);
+    }
+    background-size: 500px;
+    background-position: top 100px right 50px;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    max-width: 768px;
+    background-image: url(./../images/confetti_tablet.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(./../images/confetti_tablet@2x.png);
+    }
+    background-size: 200px;
+    background-position: top 200px right 0;
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,30 @@
+//----------------------Mobile version----------------------
+.social-links-list {
+  display: flex;
+  // max-width: 61px;
+  // justify-content: space-between;
+  @media screen and (max-width: 767.98px) {
+    justify-content: center;
+  }
+}
+.social-icons {
+  max-width: 19px;
+  max-height: 15px;
+}
+
+.social-icons:hover,
+.social-icons:focus {
+  fill: var(--accent-color);
+}
+
+// ----------------------Descktop version----------------------
+@media screen and (min-width: 1280px) {
+  .social-links-list {
+    max-width: 77px;
+  }
+
+  .social-icons {
+    max-width: 24px;
+    max-height: 19px;
+  }
+}

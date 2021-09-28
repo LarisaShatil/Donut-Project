@@ -1,0 +1,81 @@
+.contact {
+  text-align: center;
+  margin-bottom: 50px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 80px;
+  }
+}
+
+.contact-title {
+  font-family: var(--second-font-family);
+
+  font-size: 24px;
+  line-height: 1.5;
+
+  color: var(--main-text-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    line-height: 1.81;
+  }
+}
+
+.contact__text {
+  line-height: 4.06;
+  font-size: 16px;
+  line-height: 2;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 3.61;
+  }
+}
+
+.form__container--contact {
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 20px;
+
+  /*Change text in autofill textbox*/
+
+  input:-webkit-autofill {
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}
+
+.form__input--contacts {
+  background-color: inherit;
+  width: 100%;
+  background-color: transparent !important;
+  @media screen and (min-width: 320px) {
+    min-width: 265px;
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 410px;
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 430px;
+  }
+}
+
+textarea {
+  border: none;
+  border-bottom: 1px solid var(--primary-color);
+  resize: none;
+  outline: none;
+  background-color: inherit;
+
+  &::placeholder {
+    color: rgba(171, 129, 108, 0.5);
+  }
+}
+
+.button--contact {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}

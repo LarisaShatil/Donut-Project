@@ -1,0 +1,54 @@
+<header class="header">
+    <!--<a href="#home" class="home__link link scrollup">&#8682;</a>-->
+    <div class="container container--header">
+    <nav class="nav">
+        <a class="logo" href="./index.html" aria-label="our logo" title="Oh my donut">
+            <svg class="nav__logo">
+                <use href="./images/icons/sprite.svg#icon-logo"></use>
+            </svg>
+        </a>
+        <ul class="nav__menu list">
+            <li class="nav__item">
+                <a class="link nav__link" href="#about-us" aria-label="about us">About us</a>
+            </li>
+            <li class="nav__item">
+                <a class="link nav__link" href="#program" aria-label="program">Program</a>
+            </li>
+            <li class="nav__item">
+                <a class="link nav__link" href="#reviews" aria-label="reviews">Reviews</a>
+            </li>
+            <li class="nav__item">
+                <a class="link nav__link" href="#contacts" aria-label="contacts">Contacts</a>
+            </li>
+        </ul>
+    </nav>
+
+    <button type="button" class="mobile-menu-btn burger" aria-expanded="false" data-menu-button>
+        <svg class="mobile-menu-icon" width="30" height="18" aria-label="Mobile menu switch">
+            <use class="icon-menu" href="./images/icons/sprite.svg#icon-menu"></use>
+            <!-- <use class="icon-close" href="./images/icons/sprite.svg#icon-close"></use> -->
+        </svg>
+    </button>
+    </div>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu" data-menu>
+        <a class="logo--margin" href="./index.html">
+            <svg class="mobile__logo">
+                <use href="./images/icons/sprite.svg#icon-logo"></use>
+            </svg>
+        </a>
+        <ul class="mobile-nav list">
+            <li class="mobile-nav__item"><a class="link nav__link" href="#about-us" data-item> About us</a></li>
+            <li class="mobile-nav__item"><a class="link nav__link" href="#program"  data-item2>Program</a></li>
+            <li class="mobile-nav__item"><a class="link nav__link" href="#reviews"  data-item3>Reviews</a></li>
+            <li class="mobile-nav__item"><a class="link nav__link" href="#contacts"  data-item4>Contacts</a></li>
+        </ul>
+        <button type="button" class="mobile-menu-btn" aria-expanded="false" data-menu-button2>
+            <svg class="mobile-menu-icon" width="30" height="18" aria-label="Mobile menu switch">
+                <!-- <use class="icon-menu" href="./images/icons/sprite.svg#icon-menu"></use> -->
+                <use class="icon-close" href="./images/icons/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+    </div>
+</header>

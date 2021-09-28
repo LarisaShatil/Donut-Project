@@ -1,0 +1,39 @@
+<!--Registration-->
+
+<section class="registration" id="registration">
+  <div class="container container--position">
+      <h2 class="section-title registration__title">Registration</h2> 
+      
+      <picture class="image-donut">
+        <source srcset="./images/registration/desktop/donut.png 1x, ./images/registration/desktop/donut@2x.png 2x" media="(min-width:1280px)" type="image/png">
+        <source srcset="./images/registration/tablet/donut.png 1x, ./images/registration/tablet/donut@2x.png 2x" media="(min-width:768px)" type="image/png">
+        <img src="./images/registration/desktop/donut.png" alt="donut" width="257">
+        <!-- <img src="./images/registration/tablet/donut.png" alt="donut" width="196"> -->
+      </picture>
+      <div class="registration__container">
+        <h2 class="section-title registration__title--hidden">Registration</h2>
+        <ul class="registration__list list">
+            <li class="registration__date">May 23, 11:00</li>
+            <li class="registration__location">New York</li>
+            <li class="registration__cost">$ 699</li>
+        </ul>
+      <form class="form" autocomplete="off">
+        <div class="form__container reg-wrapp">
+          <p class="form__order">Apply your personal info for registration</p>
+          <label for="name"><input type="text" class="form__input" id="name" name="name" pattern="^[A-Za-zA-Яа-яЁё\s]+$" title="Includes only letters" placeholder="Your name" required><span></span></label>
+          <label for="tel"><input type="text" class="form__input--mask" id="tel" name="tel" pattern="/\38([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}/" minlength="13" maxlength="13" title="Number format: +38 (xxx) xxx-xx-xx" placeholder="Phone number" required><span></span></label>
+          <label><input type="email" class="form__input" name="email" autocomplete="on" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" title="Email format: ____@__.__" placeholder="Email" required><span></span></label>
+    
+        
+            <!-- <input id="phone" type="text" class="form-control"> -->
+          
+          
+        </div> 
+        <button type="submit" class="button register__button" aria-label="send regist info">Register</button>
+      </form>
+    </div>
+    
+  </div>     
+</section>
+
+

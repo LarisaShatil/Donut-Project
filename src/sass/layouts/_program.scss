@@ -1,0 +1,233 @@
+.program__container {
+  margin-top: 8px;
+  @media screen and(max-width:767.98px) {
+    margin-bottom: 50px;
+  }
+  @media screen and(min-width:768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and(min-width:1280px) {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+.program__description {
+  flex-grow: 1;
+  @media screen and(min-width:768px) {
+    margin-right: 38px;
+  }
+  @media screen and(min-width:1280px) {
+    flex-basis: calc((100% - 40px) / 2);
+    margin-right: 40px;
+  }
+}
+.program-wrapp__item {
+  list-style-type: none;
+}
+.program__title {
+  font-family: var(--second-font-family);
+  font-weight: var(--main-font-weight);
+  font-size: 24px;
+  line-height: 2.71;
+  text-align: center;
+
+  @media screen and(min-width: 1280px) {
+    font-size: 36px;
+    line-height: 1.81;
+    margin-bottom: 10px;
+  }
+}
+.program__text {
+  margin-bottom: 10px;
+
+  @media screen and(min-width:1280px) {
+    margin-bottom: 21px;
+  }
+}
+
+
+
+.program__text--hidden {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  @media screen and(min-width:1280px) {
+    margin-top: 21px;
+  }
+}
+.program__item {
+  margin-bottom: 10px;
+}
+
+.program__item:not(:last-child) {
+  @media screen and(min-width:1280px) {
+    margin-bottom: 15px;
+  }
+}
+.program__item::before {
+  content: '>';
+}
+
+.program__highlights-wrap {
+  transform: translateY(42px);
+
+  @media screen and(max-width:767.98px) {
+    max-width: 290px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and(min-width:768px) {
+    width: 299px;
+  }
+  @media screen and(min-width:1280px) {
+    width: 392px;
+  }
+}
+.program__highlights {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: -6px;
+  margin-top: -57px;
+  @media screen and(min-width:768px) {
+    margin-left: -14px;
+  }
+  @media screen and(min-width:1280px) {
+    margin-left: -32px;
+    margin-top: -61px;
+  }
+
+
+}
+.highlights__item {
+  position: relative;
+  max-width: 142px;
+  height: 142px;
+
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(0.9);
+  }
+
+  @media screen and (min-width: 1280px) {
+    min-width: 180px;
+    min-height: 180px;
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 8px;
+  margin-left: 6px;
+  margin-top: 57px;
+  flex-basis: calc((100% - 12px) / 2);
+  color: var(--second-text-color);
+  background-color: #fef3e4;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+  @media screen and(min-width:768px) {
+    margin-left: 14px;
+    flex-basis: calc((100% - 28px) / 2);
+  }
+  @media screen and(min-width:1280px) {
+    max-width: 180px;
+    height: 180px;
+    margin-left: 32px;
+    margin-top: 61px;
+  }
+}
+.highlights__item:nth-child(even) {
+  transform: translateY(40px);
+  &:hover {
+    transform: translateY(25px) scale(0.9);
+  }
+}
+.highlights__img {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: auto;
+}
+
+.highlights__title {
+  margin-bottom: 13px;
+  font-family: var(--second-font-family);
+  font-size: var(--main-font-size);
+  line-height: 1.28;
+
+  @media screen and(min-width:1280px) {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+.highlights__text {
+  margin-bottom: 13px;
+  font-size: 14px;
+  line-height: 1.21;
+  @media screen and(min-width:1280px) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+.highlights__icon {
+
+  fill: var(--additional-color);
+
+
+  fill: #674d40;
+}
+
+.program-wrapp__item:first-child {
+  margin-bottom: 20px;
+}
+.program {
+  padding-top: 30px;
+  margin-bottom: 40px;
+}
+
+.program-wrapp {
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    & .program-wrapp__item {
+      width: 50%;
+    }
+  }
+}
+.program-wrapp__item {
+  padding-right: 20px;
+}
+
+.program-wrapp__item:nth-child(2) {
+  position: relative;
+  top: -30px;
+  right: -10px;
+}
+.program_btn {
+  display: block;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.program__title {
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+.program {
+  margin-bottom: 0;
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 40px;
+  }
+}

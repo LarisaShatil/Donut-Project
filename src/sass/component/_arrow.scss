@@ -1,0 +1,38 @@
+.scrollup {
+  text-align: center;
+  position: fixed;
+  bottom: 70px;
+  right: 30px;
+  cursor: pointer;
+  opacity: 0.7;
+  z-index: 1500;
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    bottom: 170px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    bottom: 190px;
+  }
+
+  &:focus,
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.arrow__icon {
+  width: 30px;
+  height: 30px;
+  fill: var(--accent-color);
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 50px;
+    height: 50px;
+  }
+}

@@ -1,0 +1,12 @@
+.section-title {
+  font-family: var(--second-font-family);
+  font-weight: var(--main-font-weight);
+  font-size: 24px;
+  line-height: 2.71;
+  color: var(--main-text-color);
+
+  @media screen and(min-width: 1280px) {
+    font-size: 36px;
+    line-height: 1.81;
+  }
+}

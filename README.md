@@ -1,5 +1,9 @@
-💪Command project at GoIt.
+Command project.💪
 
-In the 🍩 Donut project were used: html, sass, pagination, etc.
+The Donut project is a Single Page website in which were used: 
++ html,
++ sass,
++ parcel,
++ etc.
 
-📆 June, 8, 2021
+June, 8, 2021
